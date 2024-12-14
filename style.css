@@ -665,6 +665,7 @@ article.container::before {
     overflow-x: scroll;
     display: flex;
     gap: 12px;
+    padding-bottom: 12px;
 }
 
 .slider-list:first-child {
