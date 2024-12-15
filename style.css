@@ -313,6 +313,20 @@ body {
     font-size: var(--label-2);
 }
 
+.fade-in {
+    animation: fade-in 1s ease forwards;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 .header .btn-primary .span {
     display: none;
 }
