@@ -109,8 +109,8 @@ export const updateWeather = function (lat, lon) {
 			sys: { sunrise: sunriseUnixUTC, sunset: sunsetUnixUTC },
 			main: { temp, feels_like, pressure, humidity },
 			visibility,
-			timezone,
-		} = currentWeather;
+			timezone
+		} = currentWeather
 		const [{ description, icon }] = weather;
 
 		const card = document.createElement('div');
@@ -320,7 +320,7 @@ export const updateWeather = function (lat, lon) {
             </div>
          `;
 
-			for (let i = 7, len = forecastList.length; i < len; i += 8) {
+			for (let i = 7, len = forecastList.length; i < len; i+=8) {
 				const {
 					main: { temp_max },
 					weather,
@@ -359,7 +359,7 @@ export const updateWeather = function (lat, lon) {
 	});
 };
 
-export const error404 = () => (errorContent.style.display = 'flex');
+export const error404 = () => errorContent.style.display = 'flex';
 
 const year = document.getElementById('year');
 const thisYear = new Date().getFullYear();
